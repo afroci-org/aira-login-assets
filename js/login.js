@@ -1,9 +1,4 @@
 window.addEventListener('load', function () {
-
-    var config = JSON.parse(
-      decodeURIComponent(escape(window.atob('@@config@@')))
-    );
-
     const appTitle = config.dict.signin?.title || 'AIRA';
     document.getElementById('app-title').innerText = appTitle;
 
