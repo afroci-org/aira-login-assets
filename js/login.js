@@ -156,6 +156,5 @@ window.addEventListener('load', function () {
   };
 
   function translateError(message, lang = 'ja') {
-    console.log(message);
     return errorTranslations[message]?.[lang] || 'ログインに失敗しました。しばらくしてからもう一度お試しください';
   }
