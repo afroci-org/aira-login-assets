@@ -28,7 +28,6 @@ window.addEventListener('load', function () {
     };
 
     var webAuth = new auth0.WebAuth(params);
-    var databaseConnection = 'Username-Password-Authentication';
 
     function login() {
       var button = document.getElementById('btn-login').value;
@@ -38,7 +37,6 @@ window.addEventListener('load', function () {
 
       var request = () => {
         webAuth.login({
-          realm: databaseConnection,
           username: username,
           password: password,
         }, function (err) {
