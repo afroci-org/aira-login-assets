@@ -37,6 +37,7 @@ window.addEventListener('load', function () {
 
       var request = () => {
         webAuth.login({
+          realm: connectionMapping[config.clientID],
           username: username,
           password: password,
         }, function (err) {
